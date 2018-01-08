@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="GB2312"?>
+<?xml-stylesheet type="text/xsl" href="exam7-4.xslt"?>
+<Booklist>
+	<Book>
+		<BookID>000001</BookID>
+		<BookType>计算机</BookType>
+		<BookName>算法与数据结构</BookName>
+		<Auth>严蔚敏 陈文博</Auth>
+		<Publisher>清华大学出版社</Publisher>
+		<Price>24</Price>
+		<PubDate>2002-1-1</PubDate>
+		<Quantity>10</Quantity>
+	</Book>
+	<Book>
+		<BookID>000002</BookID>
+		<BookType>计算机</BookType>
+		<BookName>软件工程导轮</BookName>
+		<Auth>张海藩</Auth>
+		<Publisher>清华大学出版社</Publisher>
+		<Price>5.4</Price>
+		<PubDate>1987-6-1</PubDate>
+		<Quantity>5</Quantity>
+	</Book>
+	<Book>
+		<BookID>000003</BookID>
+		<BookType>计算机</BookType>
+		<BookName>XML/JSP网页编程教材</BookName>
+		<Auth>吴艾</Auth>
+		<Publisher>北京希望电子出版社</Publisher>
+		<Price>46</Price>
+		<PubDate>2001-7-1</PubDate>
+		<Quantity>15</Quantity>
+	</Book>
+	<Book>
+		<BookID>000012</BookID>
+		<BookType>工具</BookType>
+		<BookName>汉语成语字典</BookName>
+		<Auth>李一华 吕德申</Auth>
+		<Publisher>四川辞书出版社</Publisher>
+		<Price>12</Price>
+		<PubDate>1992-1-1</PubDate>
+		<Quantity>10</Quantity>
+	</Book>
+	<Book>
+		<BookID>000016</BookID>
+		<BookType>机械</BookType>
+		<BookName>机电控制工程</BookName>
+		<Auth>高钟毓 王永梁</Auth>
+		<Publisher>清华大学出版社</Publisher>
+		<Price>19.8</Price>
+		<PubDate>1994-9-1</PubDate>
+		<Quantity>19</Quantity>
+	</Book>
+	<Book>
+		<BookID>000018</BookID>
+		<BookType>工具</BookType>
+		<BookName>英华大字典</BookName>
+		<Auth>郑易里</Auth>
+		<Publisher>商务印书馆</Publisher>
+		<Price>18.5</Price>
+		<PubDate>1984-11-1</PubDate>
+		<Quantity>2</Quantity>
+	</Book>
+</Booklist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!ELEMENT 书目 (图书信息*)>
+<!ELEMENT 图书信息 (评价,原出版社*,作者+,译者*,丛书名,出版社,开本,出版日期,页码,版次)>
+<!ELEMENT 评价 (书评*)>
+<!ELEMENT 书评 (#PCDATA)>
+<!ELEMENT 原出版社 (#PCDATA)>
+<!ELEMENT 作者 (#PCDATA)>
+<!ELEMENT 译者 (#PCDATA)>
+<!ELEMENT 丛书名 (#PCDATA)>
+<!ELEMENT 出版社 (#PCDATA)>
+<!ELEMENT 开本 (#PCDATA)>
+<!ELEMENT 出版日期 (年,月,日)>
+<!ELEMENT 年 (#PCDATA)>
+<!ELEMENT 月 (#PCDATA)>
+<!ELEMENT 日 (#PCDATA)>
+<!ELEMENT 页码 (#PCDATA)>
+<!ELEMENT 版次 (#PCDATA)>
+<!ATTLIST 译者 国籍 CDATA #IMPLIED>
+<!ATTLIST 作者 国籍 CDATA #REQUIRED>
+<!ATTLIST 评价 星级 CDATA #REQUIRED>
+<!ATTLIST 评价 评价条数 CDATA #IMPLIED>
+<!ATTLIST 图书信息 书名 CDATA #REQUIRED>
+<!ATTLIST 图书信息 原书名 CDATA #IMPLIED>
+<!ATTLIST 图书信息 书号 CDATA #REQUIRED>
+<!ATTLIST 图书信息 所属类别 CDATA #IMPLIED>

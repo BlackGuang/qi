@@ -1,0 +1,5 @@
+联想手机和笔记本：<br/>
+<xsl:for-each select="//笔记本[@品牌='联想']|//手机[@品牌='联想']">
+品牌：<xsl:value-of select="@品牌" />、型号：<xsl:value-of select="@型号" />、报价：<xsl:value-of select="@报价" /><br/>
+</xsl:for-each>
+<br/>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--root元素中包含了2个子元素-->
+<!ELEMENT Library (Book,Member)>
+<!ELEMENT Book (#PCDATA)>
+<!ELEMENT Member (#PCDATA)>
+<!ATTLIST root param1 CDATA #REQUIRED
+			   param2 CDATA #IMPLIED>
+<!ENTITY NAME1 "ENTITY VALUE">
+<!ENTITY PIC SYSTEM "Sunset.jpg" NDATA jpr>
+<!NOTATION jpr SYSTEM "mspaint.exe">

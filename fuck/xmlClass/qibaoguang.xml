@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookshop xmlns="http://www.w3school.com.cn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3school.com.cn file:///D:/xml/1.xsd">
+	<booklist>
+		<booktype uid="TECH">
+			<typename>文学</typename>
+			<description>文学</description>
+			<book>
+				<ISBN>文学</ISBN>
+				<bookname>四世同堂</bookname>
+				<author>老舍</author>
+				<author>老舍</author>
+				<totalpage>150</totalpage>
+			</book>
+		</booktype>
+		<booktype uid="TECH">
+			<typename></typename>
+			<description/>
+			<book>
+				<ISBN/>
+				<bookname/>
+				<author/>
+				<totalpage>0</totalpage>
+			</book>
+		</booktype>
+	</booklist>
+</bookshop>

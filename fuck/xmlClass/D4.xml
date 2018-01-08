@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:m="http://www.whut.edu.cn/xml/major"
+	  xmlns:s="http://www.whut.edu.cn/xml/student"
+	   xmlns="http://www.whut.edu.cn/xml">
+
+	<m:major>
+		<m:name>软件工程</m:name>
+	</m:major>
+
+	<students>
+		<student sn="01">
+			<s:name>张三</s:name>
+			<s:age>20</s:age>
+		</student>
+		<student sn="02">
+			<s:name>李四</s:name>
+			<s:age>18</s:age>
+		</student>
+	</students>
+
+</class>

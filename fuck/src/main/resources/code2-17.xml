@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root[
+    <!ELEMENT root (shop)+>
+    <!ELEMENT shop (name, address, size)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ELEMENT size (#PCDATA)>
+]>
+<root>
+    <shop>
+        <name>中百</name>
+        <address>珞狮路</address>
+        <size>旗舰店</size>
+    </shop>
+</root>

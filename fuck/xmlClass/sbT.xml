@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+    <aa:major>
+        <name>软件工程</name>
+    </aa:major>
+
+    <students>
+        <student sn="01">
+            <name>张三</name>
+            <age>20</age>
+        </student>
+        <student sn="02">
+            <name>李四</name>
+            <age>18</age>
+        </student>
+    </students>
+</class>

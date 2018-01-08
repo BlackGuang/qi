@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+    <xs:element name="城市">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="城市名称" type="城市名称"/>
+                <xs:element name="行政信息" type="行政信息"/>
+                <xs:element name="景区人文" type="景区人文"/>
+                <xs:element name="交通信息" type="交通信息"/>
+                <xs:element name="经济产量" type="经济产量"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="城市名称">
+        <xs:sequence>
+            <xs:element name="中文名称" type="xs:string"/>
+            <xs:element name="英文名称" type="xs:string"/>
+            <xs:element name="别名" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="行政信息">
+        <xs:sequence>
+            <xs:element name="行政类别" type="xs:string"/>
+            <xs:element name="所属地区">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="区域" type="xs:string"></xs:element>
+                        <xs:element name="省份" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="下辖地区">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="辖区名称" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="政府驻地" type="xs:string"/>
+            <xs:element name="电话区号" type="xs:int"/>
+            <xs:element name="邮政编码" type="xs:int"/>
+            <xs:element name="地理位置">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="大致位置" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="领导信息">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="市委书记" type="xs:string"/>
+                        <xs:element name="市长" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="景区人文">
+        <xs:sequence>
+            <xs:element name="著名景点">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="景点名称" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="高等学府">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="学校名称" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="气候条件" type="xs:string"></xs:element>
+            <xs:element name="方言信息">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="方言名称" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="交通信息">
+        <xs:sequence>
+            <xs:element name="火车站">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="火车站名称" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="机场">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="机场名称" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="经济产量">
+        <xs:sequence>
+            <xs:element name="地区生产总值">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:decimal">
+                            <xs:attribute name="单位" type="xs:string" fixed="亿元"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="人均生产总值">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:decimal">
+                            <xs:attribute name="单位" type="xs:string" fixed="元"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
